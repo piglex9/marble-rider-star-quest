@@ -14,7 +14,7 @@ while true do
         break
     end
     for i,v in next, workspace.Collect:GetDescendants() do
-        if v.Name == "Star" and v:FindFirstChild("TouchInterest") then
+        if v.Name == "Star" and v:FindFirstChild("TouchInterest") then -- idk if this does anything tho because u literally go into the blue stars
             firetouchinterest(player.Character.HumanoidRootPart, v, 0)
             firetouchinterest(player.Character.HumanoidRootPart, v, 1)
         end
