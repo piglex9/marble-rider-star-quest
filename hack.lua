@@ -13,13 +13,15 @@ while true do
     if _G.stop then -- run `_G.stop = true` to disable loop
         break
     end
-    for i,v in next, workspace.Collect:GetDescendants() do
-        if v.Name == "Star" and v:FindFirstChild("TouchInterest") then -- idk if this is necessary 
-            firetouchinterest(player.Character.HumanoidRootPart, v, 0)
-            firetouchinterest(player.Character.HumanoidRootPart, v, 1)
-        end
-        if v.Name == "Star" and v:FindFirstChild("ClickDetector") then
-            fireclickdetector(v.ClickDetector, math.huge)
+    if player.Character and player.Character:FindFirstChild("Marble") then
+        for i,v in next, workspace.Collect:GetDescendants() do
+            if v.Name == "Star" and v:FindFirstChild("TouchInterest") then 
+                firetouchinterest(player.Character.Marble, v, 0)
+                firetouchinterest(player.Character.Marble, v, 1)
+            end
+            if v.Name == "Star" and v:FindFirstChild("ClickDetector") then
+                fireclickdetector(v.ClickDetector, math.huge)
+            end
         end
     end
 end
