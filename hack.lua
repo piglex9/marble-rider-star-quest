@@ -10,7 +10,7 @@ assert(fireclickdetector, "No fireclickdetector")
 
 while true do
     wait(1) -- make it wait longer if you have shit ping
-    if _G.stop then -- _G.stop = true to disable it
+    if _G.stop then -- run `_G.stop = true` to disable loop
         break
     end
     for i,v in next, workspace.Collect:GetDescendants() do
