@@ -9,6 +9,8 @@
 local players = game:GetService("Players")
 local player = players.LocalPlayer
 
+assert(firetouchinterest, "No firetouchinterest")
+
 while true do
     wait(1) -- leave this so u dont die too fast ig
     if _G.stop then
