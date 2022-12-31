@@ -10,7 +10,6 @@ assert(firetouchinterest, "No firetouchinterest")
 assert(fireclickdetector, "No fireclickdetector")
 
 while true do
-    task.wait(10) -- do not change
     if _G.stop then -- run `_G.stop = true` to disable loop
         break
     end
@@ -29,4 +28,5 @@ while true do
             end
         end
     end
+    task.wait(10) -- do not change
 end
