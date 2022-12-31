@@ -4,6 +4,7 @@
         - execute
         - go in a marble
         - you die and others die too (just the way the game works)
+    this is old and sadly wont work anymore
 --]]
 
 
