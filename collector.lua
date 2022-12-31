@@ -10,7 +10,7 @@ assert(firetouchinterest, "No firetouchinterest")
 assert(fireclickdetector, "No fireclickdetector")
 
 while true do
-    wait(1) -- make it wait longer if you have shit ping
+    task.wait(10) -- do not change
     if _G.stop then -- run `_G.stop = true` to disable loop
         break
     end
