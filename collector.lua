@@ -1,4 +1,6 @@
 --game link: https://www.roblox.com/games/4591043103/Marble-Rider-Star-Quest#!/about
+-- old
+
 
 local workspace = game:GetService("Workspace")
 local players = game:GetService("Players")
